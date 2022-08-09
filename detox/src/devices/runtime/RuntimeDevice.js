@@ -200,8 +200,7 @@ class RuntimeDevice {
   }
 
   async reloadReactNative() {
-    await traceCall('reloadRN', () =>
-      this.deviceDriver.reloadReactNative());
+    this.deviceDriver.reloadReactNative();
   }
 
   async openURL(params) {
